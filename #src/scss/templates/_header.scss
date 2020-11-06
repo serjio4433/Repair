@@ -1,0 +1,90 @@
+.header {
+  background-color: $dark;
+  padding: 24px 0;
+}
+.container {
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // .menu__logo
+
+  &__logo {
+    color: $primary;
+    text-transform: uppercase;
+  }
+
+  // .menu__nav
+
+  &__nav {
+  }
+
+  // .menu__contacts
+
+  &__contacts {
+  }
+}
+.logo {
+}
+.nav {
+  // .nav__item
+
+  &__item {
+    color: $light;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 40px;
+  }
+}
+.contacts {
+  // .contacts__phone
+
+  &__phone {
+    margin-right: 45px;
+  }
+
+  // .contacts__button
+
+  &__button {
+  }
+}
+.phone {
+  color: $primary;
+}
+
+.hero {
+  // .hero__instagram
+
+  &__instagram {
+  }
+
+  // .hero__content
+
+  &__content {
+  }
+
+  // .hero__title
+
+  &__title {
+  }
+
+  // .hero__text
+
+  &__text {
+  }
+
+  // .hero__button
+
+  &__button {
+  }
+}
+.instagram {
+}
+.title {
+}
+.button--outline {
+}
+.scroll-down {
+}
