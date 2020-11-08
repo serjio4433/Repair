@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: $dark;
   padding: 24px 0;
 }
@@ -33,10 +38,13 @@
 
   &__item {
     color: $light;
-    font-family: "FuturaBook";
     text-transform: uppercase;
     text-decoration: none;
     margin-right: 40px;
+    transition: color 0.2s;
+    &:hover {
+      color: $primary;
+    }
   }
 }
 .contacts {
@@ -55,37 +63,4 @@
   color: $primary;
 }
 
-.hero {
-  // .hero__instagram
 
-  &__instagram {
-  }
-
-  // .hero__content
-
-  &__content {
-  }
-
-  // .hero__title
-
-  &__title {
-  }
-
-  // .hero__text
-
-  &__text {
-  }
-
-  // .hero__button
-
-  &__button {
-  }
-}
-.instagram {
-}
-.title {
-}
-.button--outline {
-}
-.scroll-down {
-}

@@ -389,18 +389,57 @@ template {
   text-transform: uppercase;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button--primary {
-  background: #e3b837;
+  background: #E3B873;
+  color: #fff;
+  -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+          box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.3s;
+  transition: -webkit-box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+}
+
+.button--primary:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button--outline {
+  border: 1px solid #fff;
+  background-color: transparent;
   color: #fff;
 }
 
 .container {
+  width: 85%;
   max-width: 1256px;
   margin: auto;
-  border: 1px solid red;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'FuturaBook', sans-serif;
+  font-size: 14px;
 }
 
 .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0;
 }
@@ -418,16 +457,22 @@ template {
 }
 
 .menu__logo {
-  color: #e3b837;
+  color: #E3B873;
   text-transform: uppercase;
 }
 
 .nav__item {
   color: #fff;
-  font-family: "FuturaBook";
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 40px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.nav__item:hover {
+  color: #E3B873;
 }
 
 .contacts__phone {
@@ -435,7 +480,148 @@ template {
 }
 
 .phone {
-  color: #e3b837;
+  color: #E3B873;
+}
+
+.no-webp .hero {
+  background: #131313 url("../img/heroBG.jpg") no-repeat center/cover; }
+
+.hero {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 100px;
+  height: 100vh;
+  color: #fff;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
+.hero__instagram {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 80px;
+  height: 100%;
+}
+
+.hero__content {
+  position: relative;
+  max-width: 670px;
+}
+
+.hero__title {
+  margin: 0;
+  font-family: 'YesevaOne', cursive;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.hero .title--primary {
+  color: #E3B873;
+}
+
+.hero__text {
+  font-size: 20px;
+  max-width: 500px;
+}
+
+.hero__button {
+  margin-right: 20px;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #131313;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+}
+
+.instagram__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #E3B873;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.instagram__link::after {
+  content: '';
+  margin-left: 8px;
+  width: 50px;
+  height: 1px;
+  background-color: #E3B873;
+}
+
+.title {
+  margin: 0;
+}
+
+.hero__scroll-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  text-decoration: none;
+  text-transform: uppercase;
+  left: 0;
+  bottom: 0;
+  min-width: 247px;
+  min-height: 97px;
+  background-color: #131313;
+  color: #E3B873;
+}
+
+.hero__scroll-down::after {
+  content: "";
+  background: url("../img/icons/arrow-down.svg") no-repeat center;
+  color: #E3B873;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #E3B873;
+  border-radius: 50%;
+  margin-left: 12px;
 }
 
 @font-face {
@@ -453,3 +639,13 @@ template {
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "YesevaOne";
+  font-display: swap;
+  src: url("../fonts/YesevaOne-Regular.woff") format("woff"), url("../fonts/YesevaOne-Regular.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.webp .hero { background: #131313 url(../img/heroBG.webp) no-repeat center/cover; }
