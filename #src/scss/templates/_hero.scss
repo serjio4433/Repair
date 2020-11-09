@@ -29,7 +29,8 @@
   // .hero__content
   &__content {
     position: relative;
-    max-width: 670px;
+    max-width: 47.85rem;
+    margin-left: 4.28rem;
     
   }
   // .hero__title
@@ -37,15 +38,14 @@
     margin: 0;
     font-family: 'YesevaOne', cursive;
     text-transform: uppercase;
-    font-size: 40px;
+    @include adaptiv-font(40, 23);
   }
   .title--primary {
       color: $primary;
     }
   // .hero__text
   &__text {
-    font-size: 20px;
-    max-width: 500px;
+    @include adaptiv-font(22, 18);
   }
   // .hero__button
   &__button {
@@ -91,8 +91,8 @@
   text-transform: uppercase;
   left: 0;
   bottom: 0;
-  min-width: 247px;
-  min-height: 97px;
+  min-width: 17.6rem;
+  min-height: 6.92rem;
   background-color: $dark;
   color: $primary;
   &::after {

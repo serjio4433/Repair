@@ -1,15 +1,19 @@
 
 @import "normalize";
-@import "templates/mixins";
+
 @import "variables";
+@import "templates/mixins";
 @import "interface";
 @import "grid";
 @import "settings";
 
+
 @import "templates/header";
 @import "templates/hero";
+@import "templates/control";
 
 
 @import "fonts";
+@import "media";
 
 

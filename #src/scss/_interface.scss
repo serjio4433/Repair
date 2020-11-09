@@ -3,6 +3,7 @@
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
+  @include adaptiv-font(13, 13);
   &:hover {
     cursor: pointer;
   }
