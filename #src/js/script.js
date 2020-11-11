@@ -15,19 +15,38 @@ testWebP(function (support) {
   }
 });
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  const modal = document.querySelector('.modal');
-  const modalBtn = document.querySelectorAll('[data-toggle=modal]');
-  const closeBtn = document.querySelector('.modal__close');
-  const switchModal = () => {
-    modal.classList.toggle('modal--visible');
-  }
+$(document).ready(function () {
+  var modal = $('.modal'),
+    modalBtn = $('[data-toggle="modal"]'),
+    closeBtn = $('.modal__close');
 
-
-  modalBtn.forEach(element => {
-    element.addEventListener('click', switchModal);
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
   });
-  closeBtn.addEventListener('click', switchModal);
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+  });
+
+  var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+  })
+
 });
+
+// document.addEventListener("DOMContentLoaded", function (event) {
+//   const modal = document.querySelector('.modal');
+//   const modalBtn = document.querySelectorAll('[data-toggle=modal]');
+//   const closeBtn = document.querySelector('.modal__close');
+//   const switchModal = () => {
+//     modal.classList.toggle('modal--visible');
+//   }
+
+
+//   modalBtn.forEach(element => {
+//     element.addEventListener('click', switchModal);
+//   });
+//   closeBtn.addEventListener('click', switchModal);
+// });
 
 // });
