@@ -8,6 +8,9 @@ body {
    font-family: 'FuturaBook', sans-serif;
    // font-size: 14px;
 }
+img {
+   max-width: 100%;
+}
 .section {
    &-title {
       text-align: center;

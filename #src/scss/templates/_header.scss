@@ -11,6 +11,7 @@
 }
 .menu {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 
@@ -29,6 +30,11 @@
   // .menu__contacts
 
   &__contacts {
+   display: flex;
+   flex-wrap: nowrap;
+   align-items: center;
+   justify-content: center;
+    flex-direction: row;
   }
 }
 .logo {
@@ -40,12 +46,14 @@
     color: $light;
     text-transform: uppercase;
     text-decoration: none;
-    @include adaptiv-font(14, 12);
-    margin-right: 2.85rem;
+    margin-right: 40px;
     transition: color 0.2s;
     &:hover {
       color: $primary;
     }
+    &:last-child {
+      margin-right: 0;
+    }  
   }
 }
 .contacts {
