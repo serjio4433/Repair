@@ -9,14 +9,7 @@
    flex-basis: 32%;
 }
 .card {
-
-		// .card__image
-
-		&__image {
-		}
-
 		// .card__text
-
 		&__text {
          position: relative;
          max-width: 23.6rem;
@@ -53,11 +46,6 @@
          line-height: 1.79rem;
          color: $secondary;
 		}
-
-		// .card__item
-
-		&__item {
-      }
       &__pricetag {
          position: absolute;
          margin-left: 0;

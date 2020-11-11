@@ -7,8 +7,6 @@
   background-color: $dark;
   padding: 24px 0;
 }
-.container {
-}
 .menu {
   display: flex;
   flex-direction: row;
@@ -24,8 +22,7 @@
 
   // .menu__nav
 
-  &__nav {
-  }
+
 
   // .menu__contacts
 
@@ -37,8 +34,7 @@
     flex-direction: row;
   }
 }
-.logo {
-}
+
 .nav {
   // .nav__item
 
@@ -65,8 +61,7 @@
 
   // .contacts__button
 
-  &__button {
-  }
+ 
 }
 .phone {
   color: $primary;

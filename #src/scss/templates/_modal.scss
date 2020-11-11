@@ -1,0 +1,97 @@
+.modal {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   z-index: 199;
+   width: 100%;
+   height: 100%;
+   background-color: rgba($dark, 0.6);
+		// .modal__dialog
+
+		&__dialog {
+         position: relative;
+         max-width: 36.36rem;
+         padding: 2.36rem 3.5rem 1.928rem; 
+         background: $dark url('../img/icons/bg-lines.svg') no-repeat center;
+         color: $light;
+		}
+
+		// .modal__close
+
+		&__close {
+         position: absolute;
+         top: 0;
+         right: 0;
+         width: 28px;
+         height: 28px;
+         background: transparent url('../img/icons/x-circle.svg') no-repeat center;
+         border: none;
+         margin: 12px;
+         cursor: pointer;
+         outline: none;
+		}
+
+		// .modal__title
+
+		&__title {
+         font-family: 'YesevaOne', cursive;
+         font-size: 19px;
+         text-align: center;
+         margin: 0;
+         margin-bottom: 2.428rem;
+		}
+
+		// .modal__form
+
+		&__form {
+         display: flex;
+         flex-direction: column;
+		}
+      &__input {
+         margin-bottom: 3.482rem;
+         &:last-of-type {
+            margin-bottom: 1rem;
+         }
+		}
+		// .modal__button
+
+		&__button {
+         
+      }
+      &__policy {
+         margin-bottom: 2.7rem;
+      }
+      &__button {
+         align-self: flex-end;
+      }
+}
+.form {
+
+		// .form__label
+
+		&__label {
+		}
+
+		// .form__input
+
+		
+}
+.label {
+}
+.input {
+}
+.policy {
+   display: flex;
+   flex-direction: column;
+}
+.policy-checkbox {
+}
+.button {
+}
+.button--primary {
+}

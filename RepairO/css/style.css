@@ -386,6 +386,7 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
+  outline: none;
   text-transform: uppercase;
   font-size: calc(13px + 0 * ((100vw - 320px) / 936));
 }
@@ -415,6 +416,70 @@ template {
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
+}
+
+.label--light {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.07rem;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  outline-color: #fff;
+  font-size: calc(18px + 0 * ((100vw - 320px) / 936));
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.input::-moz-placeholder {
+  color: #fff;
+}
+
+.input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.policy__checkbox:checked + .policy__label::before {
+  background: #E3B873 url("../img/icons/check.svg") center no-repeat;
+}
+
+.policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.policy__label::before {
+  content: '';
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E3B873;
+  border-radius: 1px;
+  cursor: pointer;
+  margin-right: 0.64rem;
 }
 
 .container {
@@ -754,6 +819,93 @@ img {
   font-family: 'YesevaOne';
   text-transform: uppercase;
   color: #fff;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 199;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+}
+
+.modal__dialog {
+  position: relative;
+  max-width: 36.36rem;
+  padding: 2.36rem 3.5rem 1.928rem;
+  background: #131313 url("../img/icons/bg-lines.svg") no-repeat center;
+  color: #fff;
+}
+
+.modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28px;
+  height: 28px;
+  background: transparent url("../img/icons/x-circle.svg") no-repeat center;
+  border: none;
+  margin: 12px;
+  cursor: pointer;
+  outline: none;
+}
+
+.modal__title {
+  font-family: 'YesevaOne', cursive;
+  font-size: 19px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2.428rem;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal__input {
+  margin-bottom: 3.482rem;
+}
+
+.modal__input:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.modal__policy {
+  margin-bottom: 2.7rem;
+}
+
+.modal__button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.policy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @font-face {

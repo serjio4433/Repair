@@ -2,6 +2,7 @@
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
+  outline: none;
   text-transform: uppercase;
   @include adaptiv-font(13, 13);
   &:hover {
@@ -22,4 +23,47 @@
   border: 1px solid $light;
   background-color: transparent;
   color: $light;
+}
+.label {
+  &--light {
+    color: rgba($light, 0.5);
+    font-size: 1.07rem;
+  }
+}
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  outline-color: $light;
+  @include adaptiv-font(18, 18);
+  color: $light;
+  padding: 0.5rem 0;
+  &::placeholder {
+    color: $light;
+  }
+}
+.policy {
+  &__checkbox {
+    opacity: 0;
+    visibility: hidden;
+    
+    &:checked + .policy__label {
+      &::before {
+        background: $primary url('../img/icons/check.svg') center no-repeat;
+      }
+    }
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    &::before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border: 1px solid $primary;
+      border-radius: 1px;
+      cursor: pointer;
+    margin-right: 0.64rem;    }
+  }
 }
